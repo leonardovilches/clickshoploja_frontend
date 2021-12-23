@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(22, 53, 78);
+}
+
+.navButtons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
