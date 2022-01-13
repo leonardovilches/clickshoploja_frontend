@@ -1,0 +1,68 @@
+.header {
+    background-color: var(--black);
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 4px var(--dark-green);
+
+    &__logo {
+        height: 4rem;
+        width: 8rem;
+    }
+
+    &__button-menu {
+        margin-left: 1rem;
+        margin-right: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+
+        &-toggle {
+            display: none;
+        }
+
+        &-line {
+            position: absolute;
+            background-color: var(--white);
+            display: block;
+            width: 100%;
+            height: 3px;
+            transition: 0.3s;
+        }
+
+        &:hover > &-line {
+            background-color: var(--dark-green);
+            transition: 0.3s;
+        }
+
+        .line-1 {
+            top: calc(50% - 11px);
+            transform-origin: left top;
+        }
+
+        .line-2 {
+            top: calc(50% - 1px);
+        }
+
+        .line-3 {
+            top: calc(50% + 9px);
+            transform-origin: left bottom;
+        }
+
+        &-toggle:checked + & > .line-1 {
+            transform: rotate(41deg) translate(3px, -3px);
+            transition: 0.3s;
+        }
+
+        &-toggle:checked + & > .line-2 {
+            transform: scale(0);
+            transition: 0.3s;
+        }
+
+        &-toggle:checked + & > .line-3 {
+            transform: rotate(-41deg) translate(3px, 3px);
+            transition: 0.3s;
+        }
+    }
+}

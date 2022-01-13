@@ -5,6 +5,14 @@ html, body {
   padding: 0;
 }
 
+:root {
+  --black: rgb(43, 43, 43);
+  --dark-gray: rgb(80, 80, 80);
+  --green: #43B978;
+  --dark-green: #218760;
+  --white: rgb(247, 247, 247);
+}
+
 #root {
   height: 100%;
   width: 100%;
@@ -22,3 +30,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+

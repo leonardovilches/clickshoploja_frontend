@@ -1,18 +1,25 @@
 import React from "react";
-import style from "./Header.module.css";
+import "./Header.scss";
 import { Link } from "react-router-dom";
+import Profile from "./Profile/Profile";
+import { ReactComponent as ClickShopLogo } from "../../assets/logo.svg";
 
-function Header() {
+function Header({ toggleMenu }) {
   return (
-    <header className={style.container}>
-      <nav className={style.navButtons}>
-        <Link to="/clientes" className={style.buttons}>
-          Clientes
-        </Link>
-        <Link to="/Login" className={style.buttons}>
-          Login
-        </Link>
-      </nav>
+    <header className="header">
+      <input
+        type="checkbox"
+        id="menu"
+        className="header__button-menu-toggle"
+        onClick={toggleMenu}
+      />
+      <label for="menu" className="header__button-menu">
+        <span className="header__button-menu-line line-1"></span>
+        <span className="header__button-menu-line line-2"></span>
+        <span className="header__button-menu-line line-3"></span>
+      </label>
+      <ClickShopLogo className="header__logo" />
+      <Profile className="header__profile" />
     </header>
   );
 }
