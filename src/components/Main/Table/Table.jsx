@@ -7,7 +7,297 @@ import TableHead from "./TableHead/TableHead";
 import TableBody from "./TableCell/TableBody";
 
 function Table({ children, name }) {
+
   const rows = [
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },{
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
+    {
+      name: "Jorge",
+      email: "Jorgin",
+      phone: "991"
+    },
+    {
+      name: "Deni",
+      email: "De",
+      phone: "190"
+    },
     {
       name: "Jorge",
       email: "Jorgin",
