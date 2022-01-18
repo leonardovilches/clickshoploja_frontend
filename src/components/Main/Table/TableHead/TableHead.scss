@@ -1,0 +1,52 @@
+.head {
+    display: block;
+    height: 3rem;
+    min-height: 5%;
+
+    &__row {
+        display: block;
+        height: 100%;
+        box-sizing: border-box;
+        border-bottom: 3px solid rgba(black, 0.1);
+
+        &__title {
+            font-family: Cairo, sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--gray);
+            transition: 0.3s;
+            padding: 1rem 3rem 0.5rem 0rem;
+            text-align: left;
+
+            &:hover {
+                color: var(--green);
+                transition: 0.3s;
+            }
+        }
+
+        &__checkbox {
+            padding: 0.8rem;
+
+            & > input {
+                appearance: none;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    border: 1px solid var(--gray);
+                    background-color: var(--white);
+                    transition: 0.3s;
+                }
+
+                &:checked {
+                    &::after {
+                        background-color: var(--green);
+                        border-color: var(--gray);
+                    }
+                }
+            }
+        }
+    }
+}

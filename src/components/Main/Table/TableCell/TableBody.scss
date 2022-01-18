@@ -1,0 +1,47 @@
+.body {
+    display: block;
+    width: 100%;
+    height: calc(100% - 3rem);
+    overflow-y: overlay;
+
+    &__row {
+        display: block;
+        box-sizing: border-box;
+        border-bottom: 3px solid rgba(black, 0.1);
+
+        &__text {
+            font-family: Cairo, sans-serif;
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: var(--black);
+            transition: 0.3s;
+            padding: 1rem 3rem 1rem 0rem;
+            text-align: left;
+        }
+
+        &__checkbox {
+            padding: 0.8rem;
+
+            & > input {
+                appearance: none;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    border: 1px solid var(--gray);
+                    background-color: var(--white);
+                    transition: 0.3s;
+                }
+
+                &:checked {
+                    &::after {
+                        background-color: var(--green);
+                        border-color: var(--gray);
+                    }
+                }
+            }
+        }
+    }
+}

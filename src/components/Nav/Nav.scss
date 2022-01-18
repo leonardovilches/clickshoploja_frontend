@@ -4,10 +4,11 @@ $height: calc(100% - 4rem - 4px);
     height: $height;
     overflow-x: hidden;
     white-space: nowrap;
-    position: fixed;
     background-color: var(--dark-green);
     overflow-y: hidden;
     transition: 1s;
+    position: fixed;
+    z-index: 1;
 
 
     &__links {
@@ -62,7 +63,7 @@ $height: calc(100% - 4rem - 4px);
 
 .scrollbar {
     &:hover {
-        overflow-y: scroll;
+        overflow-y: overlay;
     }
 
     scrollbar-color: var(--dark-gray) transparent; 
@@ -70,16 +71,18 @@ $height: calc(100% - 4rem - 4px);
 
     &::-webkit-scrollbar {
         background-color: transparent;
-        width: 8px;
+        width: 6px;
+        z-index: 100;
     }
 
     &::-webkit-scrollbar-thumb {
         background-color: var(--dark-gray);
+        
     }
 }
 
 .expanded {
-    width: 12rem;
+    width: 14rem;
 
     .menu__links {
         &__link {
