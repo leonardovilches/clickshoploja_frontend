@@ -1,12 +1,7 @@
-$height: calc(100% - 4rem - 4px);
-$width: calc(100% - 4rem);
-
 .main {
-    width: $width;
-    height: $height;
-    position: absolute;
     right: 0;
-    overflow-y: scroll;
+    overflow: scroll;
+    grid-area: main;
 
     scrollbar-width: none;
 

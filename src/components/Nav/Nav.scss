@@ -1,14 +1,10 @@
-$height: calc(100% - 4rem - 4px);
-
 .menu {
-    height: $height;
     overflow-x: hidden;
     white-space: nowrap;
     background-color: var(--dark-green);
     overflow-y: hidden;
     transition: 1s;
-    position: fixed;
-    z-index: 1;
+    grid-area: nav;
 
 
     &__links {
@@ -68,10 +64,12 @@ $height: calc(100% - 4rem - 4px);
 
     scrollbar-color: var(--dark-gray) transparent; 
     scrollbar-width: thin;
+    scrollbar-height: thin;
 
     &::-webkit-scrollbar {
         background-color: transparent;
         width: 6px;
+        height: 6px;
         z-index: 100;
     }
 

@@ -1,10 +1,9 @@
 .header {
     background-color: var(--black);
-    width: 100vw;
-    height: 4rem;
     display: flex;
     align-items: center;
     border-bottom: solid 4px var(--dark-green);
+    grid-area: header;
 
     &__logo {
         height: 4rem;
